@@ -1,0 +1,11 @@
+#SAY.NPC.1.
+
+
+#SAY._CommandCopyBuffer.1.
+
+
+#SAY.Key.3.
+A key of some sort.
+
+What could it be for?
+
