@@ -5,11 +5,16 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 4f;
-    private Rigidbody2D rigidbody;
+    public Transform sprite;
+    private Rigidbody2D rb;
+    private Animator animator;
+    private static Vector3 forwardsScale = new Vector3(1,1,1);
+    private static Vector3 flipScale = new Vector3(-1,1,1);
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -22,6 +27,10 @@ public class PlayerMovement : MonoBehaviour
             vertical*speed,
             0
         );
-        rigidbody.velocity = targetVelocity;
+        rb.velocity = targetVelocity;
+        animator.SetBool("Moving", targetVelocity!=Vector3.zero);
+        animator.SetFloat("YVelocity", targetVelocity.y);
+        if(horizontal<0)sprite.localScale = forwardsScale;
+        if(horizontal>0)sprite.localScale = flipScale;
     }
 }
