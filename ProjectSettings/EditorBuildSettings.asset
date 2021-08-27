@@ -4,5 +4,32 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Game/Menu.unity
+    guid: cc5cb0776f3afff4bb3f08c7ed317060
+  - enabled: 1
+    path: Assets/Scenes/Game/0-intro.unity
+    guid: f552178822c11594fb84a8f9110e587c
+  - enabled: 1
+    path: Assets/Scenes/Game/1-NiaAndJacob.unity
+    guid: 0d9b50b26eff67e4f92d96f9dca7b829
+  - enabled: 1
+    path: Assets/Scenes/Game/2-CheckIn.unity
+    guid: f6f9d1942c52d2e4d81220f5f4447fbe
+  - enabled: 1
+    path: Assets/Scenes/Game/2-MaxAndNia.unity
+    guid: 6379764d64f11844bba72a90151c75ae
+  - enabled: 1
+    path: Assets/Scenes/Game/3-CheckIn.unity
+    guid: aeb59070552b75c4c83299f391243363
+  - enabled: 1
+    path: Assets/Scenes/Game/3-JacobAndMax.unity
+    guid: 350525833d0257741acb6df73595a715
+  - enabled: 1
+    path: Assets/Scenes/Game/3-Nia.unity
+    guid: 20af8633b27957240b813aaf1cab58ba
+  - enabled: 1
+    path: Assets/Scenes/Game/4-End.unity
+    guid: bc309d4bb91a041429d83805a0d6ba2d
   m_configObjects: {}

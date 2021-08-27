@@ -33,4 +33,9 @@ public class PlayerMovement : MonoBehaviour
         if(horizontal<0)sprite.localScale = forwardsScale;
         if(horizontal>0)sprite.localScale = flipScale;
     }
+    private void OnDisable() {
+        animator.SetBool("Moving", false);
+        animator.SetFloat("YVelocity", 0);
+        rb.velocity = Vector3.zero;
+    }
 }
