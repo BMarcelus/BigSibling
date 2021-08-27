@@ -1087,6 +1087,12 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 700824046}
+    - target: {fileID: 8304820468625380795, guid: 7ded34424af95c04da7192d2a8e07480,
+        type: 3}
+      propertyPath: storyText
+      value: "Hang on, that wasn\u2019t a microaggresion right? They said it was
+        okay. "
+      objectReference: {fileID: 0}
     - target: {fileID: 8304820468625380797, guid: 7ded34424af95c04da7192d2a8e07480,
         type: 3}
       propertyPath: portrait
